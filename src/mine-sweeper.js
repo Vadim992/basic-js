@@ -32,7 +32,6 @@ function minesweeper(matrix) {
       num = 0;
            for(let vert = i-1; vert <= i+1; vert++) {
              if (vert < 0 || vert === matrix.length ) continue;
-             console.log('vert',vert);
               for (let gor = j - 1; gor <= j+1; gor++) {
                 if (gor < 0 || gor === matrix[i].length ) continue;
                 if ( vert === i && gor === j) continue;
